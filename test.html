@@ -8,18 +8,28 @@
   </head>
   <body>
     <div class="flip-container">
-      <div class="flipper">
+      <div class="flipper left">
         <!-- Front Image -->
         <div class="front">
-          <img src="images/image4.png" alt="Front Image" />
+          <img src="images/inner_left.png" alt="Front Image" />
         </div>
         <!-- Back Image -->
         <div class="back">
-          <img src="images/image5.png" alt="Back Image" />
+          <img src="images/front_left.png" alt="Back Image" />
         </div>
       </div>
       <div>
-        <img class="kurva" src="images/Image1.png" alt="" />
+        <img class="kurva" src="images/inner_middle.png" alt="" />
+      </div>
+      <div class="flipper right">
+        <!-- Front Image -->
+        <div class="front">
+          <img src="images/inner_right.png" alt="Front Image" />
+        </div>
+        <!-- Back Image -->
+        <div class="back">
+          <img src="images/front_right.png" alt="Back Image" />
+        </div>
       </div>
     </div>
 
@@ -27,7 +37,8 @@
 
     <script>
       function flipCard() {
-        document.querySelector(".flipper").classList.toggle("flipped");
+        document.querySelector(".left").classList.toggle("flipped-left");
+        document.querySelector(".right").classList.toggle("flipped-right");
       }
     </script>
   </body>

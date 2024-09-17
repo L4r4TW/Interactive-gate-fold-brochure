@@ -13,16 +13,27 @@ body {
 }
 
 .flipper {
-  position: relative;
-  width: 300px; /* Set the width of the image */
-  height: 400px; /* Set the height of the image */
+  /* position: relative; */
+  width: 410.5px;
+  height: 1157px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
+}
+
+.left {
   transform-origin: right center;
 }
 
-.flipper.flipped {
+.right {
+  transform-origin: left center;
+}
+
+.flipper.flipped-left {
   transform: rotateY(180deg);
+}
+
+.flipper.flipped-right {
+  transform: rotateY(-180deg);
 }
 
 .front,
@@ -45,6 +56,6 @@ body {
 }
 
 .kurva {
-  width: 400px;
-  height: 300px;
+  width: 821px;
+  height: 1157px;
 }
