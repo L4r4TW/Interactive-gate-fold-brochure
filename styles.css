@@ -69,14 +69,18 @@ body {
 .small-image {
   flex: 1;
 }
+
 .left {
   transform-origin: right;
   transform: rotateY(180deg);
+  z-index: 3;
 }
+
 .right {
   transform-origin: left;
   transform: rotateY(-180deg);
 }
+
 .middle-flip {
   flex: 2;
   /* position: relative; */
