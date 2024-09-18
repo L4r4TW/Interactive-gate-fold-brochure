@@ -79,7 +79,11 @@ body {
 }
 .middle-flip {
   flex: 2;
+  /* position: relative; */
+  transform-style: preserve-3d;
+  height: 845px;
 }
+
 /* Middle image (double width) */
 .large-image {
   flex: 2;
