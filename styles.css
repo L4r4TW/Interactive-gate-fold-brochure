@@ -24,6 +24,7 @@ body {
   flex: 1;
   transform-style: preserve-3d;
   transition: transform 0.6s;
+  perspective: 1500px;
 }
 
 .flipped {
@@ -96,6 +97,10 @@ body {
 /* Remove gaps */
 .brochure img {
   width: 100%;
+}
+
+.top {
+  z-index: 3000;
 }
 
 /* Responsive behavior */
