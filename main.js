@@ -41,6 +41,8 @@ function updateBrochure() {
         setTimeout(() => {
           document.querySelector(".brochure").style.transform = "rotateY(0deg)";
           document.querySelector(".flipped").style.transform = "rotateY(0deg)";
+          document.querySelector(".left .front").style.visibility = "visible";
+          document.querySelector(".right .front").style.visibility = "visible";
         }, 1000); // 7000 milliseconds = 3 seconds
 
         document.querySelector(".left").style.transform = "rotateY(0deg)";
@@ -54,8 +56,11 @@ function updateBrochure() {
       document.querySelector(".middle-flip").style.zIndex = "1000";
 
       setTimeout(() => {
+        document.querySelector(".left .front").style.visibility = "hidden";
         document.querySelector(".left").style.transform = "rotateY(-180deg)";
+        // document.querySelector(".left").style.zIndex = "0";
 
+        document.querySelector(".right .front").style.visibility = "hidden";
         document.querySelector(".right").style.transform = "rotateY(180deg)";
       }, 1000); // 7000 milliseconds = 3 seconds
       // document.querySelector(".middle-flip").classList.toggle("top");
